@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>studiovi_melo</title>
+</head>
+<body>
+
+<script>
+  const numero = "SEUNUMERO"; // coloque seu WhatsApp, ex:8199772-4904
+
+  const hora = new Date().getHours();
+  let saudacao = "";
+
+  if (hora >= 5 && hora < 12) {
+    saudacao = "Olá, bom dia!";
+  } else if (hora >= 12 && hora < 18) {
+    saudacao = "Olá, boa tarde!";
+  } else {
+    saudacao = "Olá, boa noite!";
+  }
+
+  const mensagem = `${saudacao} Gostaria de agendar meu horário no studiovi_melo para unhas e cílios 💅✨`;
+
+  window.location.href =
+    "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+</script>
+
+</body>
+</html>
